@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isRunning", false);
         }
 
-        float newXPos = Mathf.Clamp(transform.position.x, -9f, 9f); // clamping the x value to prevent falling, [-9, 9] boundaries
+        float newXPos = Mathf.Clamp(transform.position.x, -9f, 9f); 
         transform.position = new Vector3(newXPos, transform.position.y, transform.position.z);
     }
 }
